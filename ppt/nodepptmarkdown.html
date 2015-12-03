@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<!-- saved from url=(0049)file:///E:/voyaJS/GitHub/nodeppt/publish/demo.htm -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <title>nodeppt markdown 演示 - By Theo Wang</title>
+    <link rel="stylesheet" media="all" href="file:///E:/voyaJS/GitHub/nodeppt/publish/css/nodeppt.css">
+    <link rel="stylesheet" media="only screen and (max-device-width: 480px)" href="file:///E:/voyaJS/GitHub/nodeppt/publish/css/phone.css">
+    
+    <link rel="stylesheet" href="file:///E:/voyaJS/GitHub/nodeppt/publish/js/highlight/styles/monokai_sublime.css">
+    <link rel="stylesheet" href="file:///E:/voyaJS/GitHub/nodeppt/publish/css/font-awesome.css">
+    
+<link rel="stylesheet" href="file:///E:/voyaJS/GitHub/nodeppt/publish/css/theme.moon.css">
+<style type="text/css">.MathJax_Hover_Frame {border-radius: .25em; -webkit-border-radius: .25em; -moz-border-radius: .25em; -khtml-border-radius: .25em; box-shadow: 0px 0px 15px #83A; -webkit-box-shadow: 0px 0px 15px #83A; -moz-box-shadow: 0px 0px 15px #83A; -khtml-box-shadow: 0px 0px 15px #83A; border: 1px solid #A6D ! important; display: inline-block; position: absolute}
+.MathJax_Hover_Arrow {position: absolute; width: 15px; height: 11px; cursor: pointer}
+</style><style type="text/css">#MathJax_About {position: fixed; left: 50%; width: auto; text-align: center; border: 3px outset; padding: 1em 2em; background-color: #DDDDDD; color: black; cursor: default; font-family: message-box; font-size: 120%; font-style: normal; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; border-radius: 15px; -webkit-border-radius: 15px; -moz-border-radius: 15px; -khtml-border-radius: 15px; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+.MathJax_Menu {position: absolute; background-color: white; color: black; width: auto; padding: 2px; border: 1px solid #CCCCCC; margin: 0; cursor: default; font: menu; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+.MathJax_MenuItem {padding: 2px 2em; background: transparent}
+.MathJax_MenuArrow {position: absolute; right: .5em; color: #666666}
+.MathJax_MenuActive .MathJax_MenuArrow {color: white}
+.MathJax_MenuArrow.RTL {left: .5em; right: auto}
+.MathJax_MenuCheck {position: absolute; left: .7em}
+.MathJax_MenuCheck.RTL {right: .7em; left: auto}
+.MathJax_MenuRadioCheck {position: absolute; left: 1em}
+.MathJax_MenuRadioCheck.RTL {right: 1em; left: auto}
+.MathJax_MenuLabel {padding: 2px 2em 4px 1.33em; font-style: italic}
+.MathJax_MenuRule {border-top: 1px solid #CCCCCC; margin: 4px 1px 0px}
+.MathJax_MenuDisabled {color: GrayText}
+.MathJax_MenuActive {background-color: Highlight; color: HighlightText}
+.MathJax_Menu_Close {position: absolute; width: 31px; height: 31px; top: -15px; left: -15px}
+</style><style type="text/css">.MathJax_Preview .MJXc-math {color: inherit!important}
+</style><style type="text/css">#MathJax_Zoom {position: absolute; background-color: #F0F0F0; overflow: auto; display: block; z-index: 301; padding: .5em; border: 1px solid black; margin: 0; font-weight: normal; font-style: normal; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; box-shadow: 5px 5px 15px #AAAAAA; -webkit-box-shadow: 5px 5px 15px #AAAAAA; -moz-box-shadow: 5px 5px 15px #AAAAAA; -khtml-box-shadow: 5px 5px 15px #AAAAAA; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_ZoomOverlay {position: absolute; left: 0; top: 0; z-index: 300; display: inline-block; width: 100%; height: 100%; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+#MathJax_ZoomFrame {position: relative; display: inline-block; height: 0; width: 0}
+#MathJax_ZoomEventTrap {position: absolute; left: 0; top: 0; z-index: 302; display: inline-block; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+</style><style type="text/css">.MathJax_Preview {color: #888}
+#MathJax_Message {position: fixed; left: 1em; bottom: 1.5em; background-color: #E6E6E6; border: 1px solid #959595; margin: 0px; padding: 2px 8px; z-index: 102; color: black; font-size: 80%; width: auto; white-space: nowrap}
+#MathJax_MSIE_Frame {position: absolute; top: 0; left: 0; width: 0px; z-index: 101; border: 0px; margin: 0px; padding: 0px}
+.MathJax_Error {color: #CC0000; font-style: italic}
+</style><style type="text/css">.MJXc-script {font-size: .8em}
+.MJXc-right {-webkit-transform-origin: right; -moz-transform-origin: right; -ms-transform-origin: right; -o-transform-origin: right; transform-origin: right}
+.MJXc-bold {font-weight: bold}
+.MJXc-italic {font-style: italic}
+.MJXc-scr {font-family: MathJax_Script,'Times New Roman',Times,STIXGeneral,serif}
+.MJXc-frak {font-family: MathJax_Fraktur,'Times New Roman',Times,STIXGeneral,serif}
+.MJXc-sf {font-family: MathJax_SansSerif,'Times New Roman',Times,STIXGeneral,serif}
+.MJXc-cal {font-family: MathJax_Caligraphic,'Times New Roman',Times,STIXGeneral,serif}
+.MJXc-mono {font-family: MathJax_Typewriter,'Times New Roman',Times,STIXGeneral,serif}
+.MJXc-largeop {font-size: 150%}
+.MJXc-largeop.MJXc-int {vertical-align: -.2em}
+.MJXc-math {display: inline-block; line-height: 1.2; text-indent: 0; font-family: 'Times New Roman',Times,STIXGeneral,serif; white-space: nowrap; border-collapse: collapse}
+.MJXc-display {display: block; text-align: center; margin: 1em 0}
+.MJXc-math span {display: inline-block}
+.MJXc-box {display: block!important; text-align: center}
+.MJXc-box:after {content: " "}
+.MJXc-rule {display: block!important; margin-top: .1em}
+.MJXc-char {display: block!important}
+.MJXc-mo {margin: 0 .15em}
+.MJXc-mfrac {margin: 0 .125em; vertical-align: .25em}
+.MJXc-denom {display: inline-table!important; width: 100%}
+.MJXc-denom > * {display: table-row!important}
+.MJXc-surd {vertical-align: top}
+.MJXc-surd > * {display: block!important}
+.MJXc-script-box > *  {display: table!important; height: 50%}
+.MJXc-script-box > * > * {display: table-cell!important; vertical-align: top}
+.MJXc-script-box > *:last-child > * {vertical-align: bottom}
+.MJXc-script-box > * > * > * {display: block!important}
+.MJXc-mphantom {visibility: hidden}
+.MJXc-munderover {display: inline-table!important}
+.MJXc-over {display: inline-block!important; text-align: center}
+.MJXc-over > * {display: block!important}
+.MJXc-munderover > * {display: table-row!important}
+.MJXc-mtable {vertical-align: .25em; margin: 0 .125em}
+.MJXc-mtable > * {display: inline-table!important; vertical-align: middle}
+.MJXc-mtr {display: table-row!important}
+.MJXc-mtd {display: table-cell!important; text-align: center; padding: .5em 0 0 .5em}
+.MJXc-mtr > .MJXc-mtd:first-child {padding-left: 0}
+.MJXc-mtr:first-child > .MJXc-mtd {padding-top: 0}
+.MJXc-mlabeledtr {display: table-row!important}
+.MJXc-mlabeledtr > .MJXc-mtd:first-child {padding-left: 0}
+.MJXc-mlabeledtr:first-child > .MJXc-mtd {padding-top: 0}
+.MJXc-merror {background-color: #FFFF88; color: #CC0000; border: 1px solid #CC0000; padding: 1px 3px; font-style: normal; font-size: 90%}
+.MJXc-scale0 {-webkit-transform: scaleX(.0); -moz-transform: scaleX(.0); -ms-transform: scaleX(.0); -o-transform: scaleX(.0); transform: scaleX(.0)}
+.MJXc-scale1 {-webkit-transform: scaleX(.1); -moz-transform: scaleX(.1); -ms-transform: scaleX(.1); -o-transform: scaleX(.1); transform: scaleX(.1)}
+.MJXc-scale2 {-webkit-transform: scaleX(.2); -moz-transform: scaleX(.2); -ms-transform: scaleX(.2); -o-transform: scaleX(.2); transform: scaleX(.2)}
+.MJXc-scale3 {-webkit-transform: scaleX(.3); -moz-transform: scaleX(.3); -ms-transform: scaleX(.3); -o-transform: scaleX(.3); transform: scaleX(.3)}
+.MJXc-scale4 {-webkit-transform: scaleX(.4); -moz-transform: scaleX(.4); -ms-transform: scaleX(.4); -o-transform: scaleX(.4); transform: scaleX(.4)}
+.MJXc-scale5 {-webkit-transform: scaleX(.5); -moz-transform: scaleX(.5); -ms-transform: scaleX(.5); -o-transform: scaleX(.5); transform: scaleX(.5)}
+.MJXc-scale6 {-webkit-transform: scaleX(.6); -moz-transform: scaleX(.6); -ms-transform: scaleX(.6); -o-transform: scaleX(.6); transform: scaleX(.6)}
+.MJXc-scale7 {-webkit-transform: scaleX(.7); -moz-transform: scaleX(.7); -ms-transform: scaleX(.7); -o-transform: scaleX(.7); transform: scaleX(.7)}
+.MJXc-scale8 {-webkit-transform: scaleX(.8); -moz-transform: scaleX(.8); -ms-transform: scaleX(.8); -o-transform: scaleX(.8); transform: scaleX(.8)}
+.MJXc-scale9 {-webkit-transform: scaleX(.9); -moz-transform: scaleX(.9); -ms-transform: scaleX(.9); -o-transform: scaleX(.9); transform: scaleX(.9)}
+.MathJax_CHTML .noError {vertical-align: ; font-size: 90%; text-align: left; color: black; padding: 1px 3px; border: 1px solid}
+</style><style type="text/css">.MathJax_Display {text-align: center; margin: 1em 0em; position: relative; display: block!important; text-indent: 0; max-width: none; max-height: none; min-width: 0; min-height: 0; width: 100%}
+.MathJax .merror {background-color: #FFFF88; color: #CC0000; border: 1px solid #CC0000; padding: 1px 3px; font-style: normal; font-size: 90%}
+.MathJax .MJX-monospace {font-family: monospace}
+.MathJax .MJX-sans-serif {font-family: sans-serif}
+#MathJax_Tooltip {background-color: InfoBackground; color: InfoText; border: 1px solid black; box-shadow: 2px 2px 5px #AAAAAA; -webkit-box-shadow: 2px 2px 5px #AAAAAA; -moz-box-shadow: 2px 2px 5px #AAAAAA; -khtml-box-shadow: 2px 2px 5px #AAAAAA; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true'); padding: 3px 4px; z-index: 401; position: absolute; left: 0; top: 0; width: auto; height: auto; display: none}
+.MathJax {display: inline; font-style: normal; font-weight: normal; line-height: normal; font-size: 100%; font-size-adjust: none; text-indent: 0; text-align: left; text-transform: none; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; direction: ltr; max-width: none; max-height: none; min-width: 0; min-height: 0; border: 0; padding: 0; margin: 0}
+.MathJax img, .MathJax nobr, .MathJax a {border: 0; padding: 0; margin: 0; max-width: none; max-height: none; min-width: 0; min-height: 0; vertical-align: 0; line-height: normal; text-decoration: none}
+img.MathJax_strut {border: 0!important; padding: 0!important; margin: 0!important; vertical-align: 0!important}
+.MathJax span {display: inline; position: static; border: 0; padding: 0; margin: 0; vertical-align: 0; line-height: normal; text-decoration: none}
+.MathJax nobr {white-space: nowrap!important}
+.MathJax img {display: inline!important; float: none!important}
+.MathJax * {transition: none; -webkit-transition: none; -moz-transition: none; -ms-transition: none; -o-transition: none}
+.MathJax_Processing {visibility: hidden; position: fixed; width: 0; height: 0; overflow: hidden}
+.MathJax_Processed {display: none!important}
+.MathJax_ExBox {display: block!important; overflow: hidden; width: 1px; height: 60ex; min-height: 0; max-height: none}
+.MathJax .MathJax_EmBox {display: block!important; overflow: hidden; width: 1px; height: 60em; min-height: 0; max-height: none}
+.MathJax .MathJax_HitBox {cursor: text; background: white; opacity: 0; filter: alpha(opacity=0)}
+.MathJax .MathJax_HitBox * {filter: none; opacity: 1; background: transparent}
+#MathJax_Tooltip * {filter: none; opacity: 1; background: transparent}
+@font-face {font-family: MathJax_Main; src: url('file:///E:/voyaJS/GitHub/nodeppt/publish/js/mathjax/fonts/HTML-CSS/TeX/woff/MathJax_Main-Regular.woff?rev=2.5.1') format('woff'), url('file:///E:/voyaJS/GitHub/nodeppt/publish/js/mathjax/fonts/HTML-CSS/TeX/otf/MathJax_Main-Regular.otf?rev=2.5.1') format('opentype')}
+@font-face {font-family: MathJax_Main-bold; src: url('file:///E:/voyaJS/GitHub/nodeppt/publish/js/mathjax/fonts/HTML-CSS/TeX/woff/MathJax_Main-Bold.woff?rev=2.5.1') format('woff'), url('file:///E:/voyaJS/GitHub/nodeppt/publish/js/mathjax/fonts/HTML-CSS/TeX/otf/MathJax_Main-Bold.otf?rev=2.5.1') format('opentype')}
+@font-face {font-family: MathJax_Main-italic; src: url('file:///E:/voyaJS/GitHub/nodeppt/publish/js/mathjax/fonts/HTML-CSS/TeX/woff/MathJax_Main-Italic.woff?rev=2.5.1') format('woff'), url('file:///E:/voyaJS/GitHub/nodeppt/publish/js/mathjax/fonts/HTML-CSS/TeX/otf/MathJax_Main-Italic.otf?rev=2.5.1') format('opentype')}
+@font-face {font-family: MathJax_Math-italic; src: url('file:///E:/voyaJS/GitHub/nodeppt/publish/js/mathjax/fonts/HTML-CSS/TeX/woff/MathJax_Math-Italic.woff?rev=2.5.1') format('woff'), url('file:///E:/voyaJS/GitHub/nodeppt/publish/js/mathjax/fonts/HTML-CSS/TeX/otf/MathJax_Math-Italic.otf?rev=2.5.1') format('opentype')}
+@font-face {font-family: MathJax_Caligraphic; src: url('file:///E:/voyaJS/GitHub/nodeppt/publish/js/mathjax/fonts/HTML-CSS/TeX/woff/MathJax_Caligraphic-Regular.woff?rev=2.5.1') format('woff'), url('file:///E:/voyaJS/GitHub/nodeppt/publish/js/mathjax/fonts/HTML-CSS/TeX/otf/MathJax_Caligraphic-Regular.otf?rev=2.5.1') format('opentype')}
+@font-face {font-family: MathJax_Size1; src: url('file:///E:/voyaJS/GitHub/nodeppt/publish/js/mathjax/fonts/HTML-CSS/TeX/woff/MathJax_Size1-Regular.woff?rev=2.5.1') format('woff'), url('file:///E:/voyaJS/GitHub/nodeppt/publish/js/mathjax/fonts/HTML-CSS/TeX/otf/MathJax_Size1-Regular.otf?rev=2.5.1') format('opentype')}
+@font-face {font-family: MathJax_Size2; src: url('file:///E:/voyaJS/GitHub/nodeppt/publish/js/mathjax/fonts/HTML-CSS/TeX/woff/MathJax_Size2-Regular.woff?rev=2.5.1') format('woff'), url('file:///E:/voyaJS/GitHub/nodeppt/publish/js/mathjax/fonts/HTML-CSS/TeX/otf/MathJax_Size2-Regular.otf?rev=2.5.1') format('opentype')}
+@font-face {font-family: MathJax_Size3; src: url('file:///E:/voyaJS/GitHub/nodeppt/publish/js/mathjax/fonts/HTML-CSS/TeX/woff/MathJax_Size3-Regular.woff?rev=2.5.1') format('woff'), url('file:///E:/voyaJS/GitHub/nodeppt/publish/js/mathjax/fonts/HTML-CSS/TeX/otf/MathJax_Size3-Regular.otf?rev=2.5.1') format('opentype')}
+@font-face {font-family: MathJax_Size4; src: url('file:///E:/voyaJS/GitHub/nodeppt/publish/js/mathjax/fonts/HTML-CSS/TeX/woff/MathJax_Size4-Regular.woff?rev=2.5.1') format('woff'), url('file:///E:/voyaJS/GitHub/nodeppt/publish/js/mathjax/fonts/HTML-CSS/TeX/otf/MathJax_Size4-Regular.otf?rev=2.5.1') format('opentype')}
+.MathJax .noError {vertical-align: ; font-size: 90%; text-align: left; color: black; padding: 1px 3px; border: 1px solid}
+</style></head>
+<body style="opacity: 1; transition: -webkit-transform 0.8s ease;"><div style="visibility: hidden; overflow: hidden; position: absolute; top: 0px; height: 1px; width: auto; padding: 0px; border: 0px; margin: 0px; text-align: left; text-indent: 0px; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal;"><div id="MathJax_Hidden"></div></div><div id="MathJax_Message" style="display: none;"></div>
+<div class="slides">
+    <slides id="container">
+        <slide class="slide current pagedown" data-transition="move"><section class="slide-wrapper"><article class="flexbox vcenter">
+<h1>封面样式</h1>
+<h2>h1是作为封面用的，内部的都用h2</h2>
+<p><small>演讲者：xxx</small></p>
+
+</article></section></slide>
+<slide class="slide next pagedown" data-transition="move"><section class="slide-wrapper"><article class="flexbox vleft">
+<h1>样式展示</h1>
+<blockquote>
+<p>nodePPT 让每个人都爱上做分享！</p>
+</blockquote>
+
+</article></section></slide>
+<slide class="slide far-next pagedown" data-transition="move"><section class="slide-wrapper"><hgroup>
+<h2>为什么选择nodePPT</h2>
+
+</hgroup><article>
+
+<ul class="rollIn">
+<li class="tobuild" data-index="0">基于GFM的markdown语法编写</li>
+<li class="tobuild" data-index="1">支持html混排，再复杂的demo也可以做！</li>
+<li class="tobuild" data-index="2">导出网页或者pdf更容易分享</li>
+<li class="tobuild" data-index="3">支持18种转场动画，可以设置单页动画</li>
+<li class="tobuild" data-index="4">支持单页背景图片</li>
+<li class="tobuild" data-index="5">多种模式：overview模式，双屏模式，socket远程控制，摇一摇换页</li>
+<li class="tobuild" data-index="6">可以使用画板，可以使用note做备注</li>
+<li class="tobuild" data-index="7">支持语法高亮，自由选择highlight样式</li>
+<li class="tobuild" data-index="8">可以单页ppt内部动画，单步动画</li>
+<li class="tobuild" data-index="9">支持进入/退出回调，做在线demo很方便</li>
+</ul>
+
+</article></section></slide>
+<slide class="slide" data-transition="move"><section class="slide-wrapper"><hgroup>
+<h2>基本语法指南</h2>
+
+</hgroup><article>
+
+<pre><code class="markdown hljs">/<span class="hljs-bullet">* 先写总的配置 *</span>/
+title: 这是title，网页名称
+speaker: 演讲者名称
+url: https://github.com/ksky521/nodePPT
+transition: 全局转场动画
+files: 引入的js和css文件，多个以半角逗号隔开
+highlightStyle: 代码高亮样式，默认monokai_sublime
+usemathjax: yes 启用MathJax渲染公式
+
+/<span class="hljs-bullet">* 以[slide] 隔开每个ppt页面 *</span>/
+[slide]
+<span class="hljs-header">## 二级标题</span>
+这里写内容即可
+
+[slide]
+...
+</code>
+</pre>
+</article></section></slide>
+<slide class="slide fill" style="background-image:url(&#39;./img/bg1.png&#39;)" data-transition="move"><section class="slide-wrapper"><article class="flexbox vleft">
+<h1>支持单页添加背景图片</h1>
+<h2>使用方法：[slide style="background-image:url('/img/bg1.png')"]</h2>
+
+</article></section></slide>
+<slide class="slide" data-transition="move"><section class="slide-wrapper"><article>
+<h2>使用LaTex公式：</h2>
+<p><span class="MathJax_Preview" style="color: inherit;"></span><div class="MathJax_Display" style="text-align: center;"><span class="MathJax" id="MathJax-Element-1-Frame"><nobr><span class="math" id="MathJax-Span-1" role="math" style="width: 19.602em; display: inline-block;"><span style="display: inline-block; position: relative; width: 15.652em; height: 0px; font-size: 125%;"><span style="position: absolute; clip: rect(2.302em 1000.002em 4.853em -999.998em); top: -3.998em; left: 0.003em;"><span class="mrow" id="MathJax-Span-2"><span class="mi" id="MathJax-Span-3" style="font-family: MathJax_Math-italic;">x</span><span class="mo" id="MathJax-Span-4" style="font-family: MathJax_Main; padding-left: 0.302em;">=</span><span class="texatom" id="MathJax-Span-5" style="padding-left: 0.302em;"><span class="mrow" id="MathJax-Span-6"><span class="mfrac" id="MathJax-Span-7"><span style="display: inline-block; position: relative; width: 6.853em; height: 0px; margin-right: 0.102em; margin-left: 0.102em;"><span style="position: absolute; clip: rect(2.952em 1000.002em 4.252em -999.998em); top: -4.697em; left: 50%; margin-left: -3.348em;"><span class="mrow" id="MathJax-Span-8"><span class="mo" id="MathJax-Span-9" style="font-family: MathJax_Main;">−</span><span class="mi" id="MathJax-Span-10" style="font-family: MathJax_Math-italic;">b</span><span class="mo" id="MathJax-Span-11" style="font-family: MathJax_Main; padding-left: 0.202em;">±</span><span class="msqrt" id="MathJax-Span-12" style="padding-left: 0.202em;"><span style="display: inline-block; position: relative; width: 4.353em; height: 0px;"><span style="position: absolute; clip: rect(3.103em 1000.002em 4.152em -999.998em); top: -3.998em; left: 0.853em;"><span class="mrow" id="MathJax-Span-13"><span class="msubsup" id="MathJax-Span-14"><span style="display: inline-block; position: relative; width: 0.853em; height: 0px;"><span style="position: absolute; clip: rect(3.152em 1000.002em 4.152em -999.998em); top: -3.998em; left: 0.003em;"><span class="mi" id="MathJax-Span-15" style="font-family: MathJax_Math-italic;">b</span><span style="display: inline-block; width: 0px; height: 4.002em;"></span></span><span style="position: absolute; top: -4.298em; left: 0.453em;"><span class="mn" id="MathJax-Span-16" style="font-size: 70.7%; font-family: MathJax_Main;">2</span><span style="display: inline-block; width: 0px; height: 4.002em;"></span></span></span></span><span class="mo" id="MathJax-Span-17" style="font-family: MathJax_Main; padding-left: 0.202em;">−</span><span class="mn" id="MathJax-Span-18" style="font-family: MathJax_Main; padding-left: 0.202em;">4</span><span class="mi" id="MathJax-Span-19" style="font-family: MathJax_Math-italic;">a</span><span class="mi" id="MathJax-Span-20" style="font-family: MathJax_Math-italic;">c</span></span><span style="display: inline-block; width: 0px; height: 4.002em;"></span></span><span style="position: absolute; clip: rect(3.603em 1000.002em 3.902em -999.998em); top: -4.598em; left: 0.853em;"><span style="display: inline-block; position: relative; width: 3.552em; height: 0px;"><span style="position: absolute; font-family: MathJax_Main; top: -3.998em; left: -0.098em;">−<span style="display: inline-block; width: 0px; height: 4.002em;"></span></span><span style="position: absolute; font-family: MathJax_Main; top: -3.998em; left: 2.853em;">−<span style="display: inline-block; width: 0px; height: 4.002em;"></span></span><span style="font-family: MathJax_Main; position: absolute; top: -3.998em; left: 0.403em;">−<span style="display: inline-block; width: 0px; height: 4.002em;"></span></span><span style="font-family: MathJax_Main; position: absolute; top: -3.998em; left: 0.853em;">−<span style="display: inline-block; width: 0px; height: 4.002em;"></span></span><span style="font-family: MathJax_Main; position: absolute; top: -3.998em; left: 1.353em;">−<span style="display: inline-block; width: 0px; height: 4.002em;"></span></span><span style="font-family: MathJax_Main; position: absolute; top: -3.998em; left: 1.852em;">−<span style="display: inline-block; width: 0px; height: 4.002em;"></span></span><span style="font-family: MathJax_Main; position: absolute; top: -3.998em; left: 2.353em;">−<span style="display: inline-block; width: 0px; height: 4.002em;"></span></span></span><span style="display: inline-block; width: 0px; height: 4.002em;"></span></span><span style="position: absolute; clip: rect(3.052em 1000.002em 4.353em -999.998em); top: -4.098em; left: 0.003em;"><span style="font-family: MathJax_Main;">√</span><span style="display: inline-block; width: 0px; height: 4.002em;"></span></span></span></span></span><span style="display: inline-block; width: 0px; height: 4.002em;"></span></span><span style="position: absolute; clip: rect(3.202em 1000.002em 4.152em -999.998em); top: -3.298em; left: 50%; margin-left: -0.497em;"><span class="mrow" id="MathJax-Span-21"><span class="mn" id="MathJax-Span-22" style="font-family: MathJax_Main;">2</span><span class="mi" id="MathJax-Span-23" style="font-family: MathJax_Math-italic;">a</span></span><span style="display: inline-block; width: 0px; height: 4.002em;"></span></span><span style="position: absolute; clip: rect(0.853em 1000.002em 1.203em -999.998em); top: -1.248em; left: 0.003em;"><span style="border-left-width: 6.853em; border-left-style: solid; display: inline-block; overflow: hidden; width: 0px; height: 1.25px; vertical-align: 0.003em;"></span><span style="display: inline-block; width: 0px; height: 1.052em;"></span></span></span></span></span></span><span class="mo" id="MathJax-Span-24" style="font-family: MathJax_Main;">.</span><span class="mi" id="MathJax-Span-25" style="font-family: MathJax_Math-italic; padding-left: 0.152em;">s</span><span class="mo" id="MathJax-Span-26" style="font-family: MathJax_Main; padding-left: 0.302em;">=</span><span class="mi" id="MathJax-Span-27" style="font-family: MathJax_Math-italic; padding-left: 0.302em;">u</span><span class="mi" id="MathJax-Span-28" style="font-family: MathJax_Math-italic;">t</span><span class="mo" id="MathJax-Span-29" style="font-family: MathJax_Main; padding-left: 0.202em;">+</span><span class="mfrac" id="MathJax-Span-30" style="padding-left: 0.202em;"><span style="display: inline-block; position: relative; width: 0.603em; height: 0px; margin-right: 0.102em; margin-left: 0.102em;"><span style="position: absolute; clip: rect(3.202em 1000.002em 4.152em -999.998em); top: -4.697em; left: 50%; margin-left: -0.247em;"><span class="mn" id="MathJax-Span-31" style="font-family: MathJax_Main;">1</span><span style="display: inline-block; width: 0px; height: 4.002em;"></span></span><span style="position: absolute; clip: rect(3.202em 1000.002em 4.152em -999.998em); top: -3.298em; left: 50%; margin-left: -0.247em;"><span class="mn" id="MathJax-Span-32" style="font-family: MathJax_Main;">2</span><span style="display: inline-block; width: 0px; height: 4.002em;"></span></span><span style="position: absolute; clip: rect(0.853em 1000.002em 1.203em -999.998em); top: -1.248em; left: 0.003em;"><span style="border-left-width: 0.603em; border-left-style: solid; display: inline-block; overflow: hidden; width: 0px; height: 1.25px; vertical-align: 0.003em;"></span><span style="display: inline-block; width: 0px; height: 1.052em;"></span></span></span></span><span class="mi" id="MathJax-Span-33" style="font-family: MathJax_Math-italic;">a</span><span class="msubsup" id="MathJax-Span-34"><span style="display: inline-block; position: relative; width: 0.802em; height: 0px;"><span style="position: absolute; clip: rect(3.202em 1000.002em 4.152em -999.998em); top: -3.998em; left: 0.003em;"><span class="mi" id="MathJax-Span-35" style="font-family: MathJax_Math-italic;">t</span><span style="display: inline-block; width: 0px; height: 4.002em;"></span></span><span style="position: absolute; top: -4.397em; left: 0.352em;"><span class="mn" id="MathJax-Span-36" style="font-size: 70.7%; font-family: MathJax_Main;">2</span><span style="display: inline-block; width: 0px; height: 4.002em;"></span></span></span></span></span><span style="display: inline-block; width: 0px; height: 4.002em;"></span></span></span><span style="border-left-width: 0.003em; border-left-style: solid; display: inline-block; overflow: hidden; width: 0px; height: 2.941em; vertical-align: -0.934em;"></span></span></nobr></span></div><script type="math/tex; mode=display" id="MathJax-Element-1"> x = {-b \pm \sqrt{b^2-4ac} \over 2a}.    s = ut + \frac{1}{2}at^2 </script>
+矩阵：<span class="MathJax_Preview" style="color: inherit;"></span><span class="MathJax" id="MathJax-Element-2-Frame"><nobr><span class="math" id="MathJax-Span-37" role="math" style="width: 8.503em; display: inline-block;"><span style="display: inline-block; position: relative; width: 6.803em; height: 0px; font-size: 125%;"><span style="position: absolute; clip: rect(2.402em 1000.002em 5.103em -999.998em); top: -3.998em; left: 0.003em;"><span class="mrow" id="MathJax-Span-38"><span class="mi" id="MathJax-Span-39" style="font-family: MathJax_Math-italic;">x</span><span class="mo" id="MathJax-Span-40" style="font-family: MathJax_Main; padding-left: 0.302em;">=</span><span class="texatom" id="MathJax-Span-41" style="padding-left: 0.302em;"><span class="mrow" id="MathJax-Span-42"><span class="mrow" id="MathJax-Span-43"><span class="mo" id="MathJax-Span-44" style="vertical-align: 0.003em;"><span style="font-family: MathJax_Size3;">[</span></span><span class="mtable" id="MathJax-Span-45" style="padding-right: 0.152em; padding-left: 0.152em;"><span style="display: inline-block; position: relative; width: 3.502em; height: 0px;"><span style="position: absolute; clip: rect(2.552em 1000.002em 4.902em -999.998em); top: -3.998em; left: 0.003em;"><span style="display: inline-block; position: relative; width: 0.503em; height: 0px;"><span style="position: absolute; clip: rect(3.202em 1000.002em 4.152em -999.998em); top: -4.647em; left: 50%; margin-left: -0.247em;"><span class="mtd" id="MathJax-Span-46"><span class="mrow" id="MathJax-Span-47"><span class="mn" id="MathJax-Span-48" style="font-family: MathJax_Main;">1</span></span></span><span style="display: inline-block; width: 0px; height: 4.002em;"></span></span><span style="position: absolute; clip: rect(3.152em 1000.002em 4.152em -999.998em); top: -3.248em; left: 50%; margin-left: -0.247em;"><span class="mtd" id="MathJax-Span-55"><span class="mrow" id="MathJax-Span-56"><span class="mn" id="MathJax-Span-57" style="font-family: MathJax_Main;">4</span></span></span><span style="display: inline-block; width: 0px; height: 4.002em;"></span></span></span><span style="display: inline-block; width: 0px; height: 4.002em;"></span></span><span style="position: absolute; clip: rect(2.552em 1000.002em 4.902em -999.998em); top: -3.998em; left: 1.502em;"><span style="display: inline-block; position: relative; width: 0.503em; height: 0px;"><span style="position: absolute; clip: rect(3.202em 1000.002em 4.152em -999.998em); top: -4.647em; left: 50%; margin-left: -0.247em;"><span class="mtd" id="MathJax-Span-49"><span class="mrow" id="MathJax-Span-50"><span class="mn" id="MathJax-Span-51" style="font-family: MathJax_Main;">2</span></span></span><span style="display: inline-block; width: 0px; height: 4.002em;"></span></span><span style="position: absolute; clip: rect(3.202em 1000.002em 4.152em -999.998em); top: -3.248em; left: 50%; margin-left: -0.247em;"><span class="mtd" id="MathJax-Span-58"><span class="mrow" id="MathJax-Span-59"><span class="mn" id="MathJax-Span-60" style="font-family: MathJax_Main;">5</span></span></span><span style="display: inline-block; width: 0px; height: 4.002em;"></span></span></span><span style="display: inline-block; width: 0px; height: 4.002em;"></span></span><span style="position: absolute; clip: rect(2.552em 1000.002em 4.902em -999.998em); top: -3.998em; left: 3.002em;"><span style="display: inline-block; position: relative; width: 0.503em; height: 0px;"><span style="position: absolute; clip: rect(3.202em 1000.002em 4.152em -999.998em); top: -4.647em; left: 50%; margin-left: -0.247em;"><span class="mtd" id="MathJax-Span-52"><span class="mrow" id="MathJax-Span-53"><span class="mn" id="MathJax-Span-54" style="font-family: MathJax_Main;">3</span></span></span><span style="display: inline-block; width: 0px; height: 4.002em;"></span></span><span style="position: absolute; clip: rect(3.202em 1000.002em 4.152em -999.998em); top: -3.248em; left: 50%; margin-left: -0.247em;"><span class="mtd" id="MathJax-Span-61"><span class="mrow" id="MathJax-Span-62"><span class="mn" id="MathJax-Span-63" style="font-family: MathJax_Main;">6</span></span></span><span style="display: inline-block; width: 0px; height: 4.002em;"></span></span></span><span style="display: inline-block; width: 0px; height: 4.002em;"></span></span></span></span><span class="mo" id="MathJax-Span-64" style="vertical-align: 0.003em;"><span style="font-family: MathJax_Size3;">]</span></span></span></span></span></span><span style="display: inline-block; width: 0px; height: 4.002em;"></span></span></span><span style="border-left-width: 0.003em; border-left-style: solid; display: inline-block; overflow: hidden; width: 0px; height: 3.128em; vertical-align: -1.247em;"></span></span></nobr></span><script type="math/tex" id="MathJax-Element-2"> x = {\begin{bmatrix} 1 & 2 & 3 \\ 4 & 5 & 6 \end{bmatrix}}  </script></p>
+
+</article></section></slide>
+<slide class="slide" data-transition="move"><section class="slide-wrapper"><hgroup>
+<h2>支持.class/#id/自定义属性样式</h2>
+
+</hgroup><article>
+
+<pre><code class="html hljs xml">使用：.class{:.class}
+使用：#id{:#id}
+组合使用：{:.class.class2 width="200px"}
+父元素样式使用&amp;：{:&amp;.class}
+</code></pre>
+
+</article></section></slide>
+<slide class="slide" data-transition="move"><section class="slide-wrapper"><hgroup>
+<h2>主页面样式</h2>
+<h3>----是上下分界线</h3>
+
+</hgroup><article>
+
+<p>nodeppt是基于nodejs写的支持 <strong>Markdown!</strong> 语法的网页PPT</p>
+<p>nodeppt：<a href="https://github.com/ksky521/nodePPT" target="_blank">https://github.com/ksky521/nodePPT</a></p>
+
+</article></section></slide>
+<slide class="slide" data-transition="move"><section class="slide-wrapper"><div class="subSlide tobuild" data-index="0"><hgroup>
+<h2>这是一个列表</h2>
+
+</hgroup><article>
+
+<ul>
+<li>上下左右方向键翻页<ul class="moveIn">
+<li class="tobuild" data-index="1">列表支持渐显动画</li>
+<li class="tobuild" data-index="2">支持多级列表</li>
+<li class="tobuild" data-index="3">这个动画是moveIn</li>
+</ul>
+</li>
+<li>完全基于markdown语法哦</li>
+</ul>
+
+</article></div>
+<div class="subSlide tobuild" data-index="4"><hgroup>
+<h2>这是一个subslide页面</h2>
+
+</hgroup><article>
+
+<ol class="rollIn">
+<li class="tobuild" data-index="5">数字列表</li>
+<li class="tobuild" data-index="6">数字列表</li>
+<li class="tobuild" data-index="7">数字列表，这是一个subslide页面</li>
+</ol>
+
+</article></div></section></slide>
+<slide class="slide" data-transition="move"><section class="slide-wrapper"><hgroup>
+<h2>列表渐显动画：fadeIn</h2>
+
+</hgroup><article>
+
+<ul class="fadeIn">
+<li class="tobuild" data-index="0">列表支持渐显动画哦<ul>
+<li>使用方法</li>
+<li>markdown列表第一条加上：{:&amp;.动画类型}</li>
+</ul>
+</li>
+<li class="tobuild" data-index="1">动画类型<ul>
+<li>fadeIn</li>
+<li>rollIn</li>
+<li>bounceIn</li>
+<li>moveIn</li>
+<li>zoomIn</li>
+</ul>
+</li>
+</ul>
+
+</article></section></slide>
+<slide class="slide" data-transition="move"><section class="slide-wrapper"><hgroup>
+<h2>列表渐显动画：zoomIn</h2>
+
+</hgroup><article>
+
+<ul class="zoomIn">
+<li class="tobuild" data-index="0">列表支持渐显动画哦</li>
+<li class="tobuild" data-index="1">动画类型<ul>
+<li>fadeIn</li>
+<li>rollIn</li>
+<li>bounceIn</li>
+<li>moveIn</li>
+<li>zoomIn</li>
+</ul>
+</li>
+</ul>
+
+</article></section></slide>
+<slide class="slide" data-transition="move"><section class="slide-wrapper"><hgroup>
+<h2>列表渐显动画：bounceIn</h2>
+
+</hgroup><article>
+
+<ul class="bounceIn">
+<li class="tobuild" data-index="0">列表支持渐显动画哦</li>
+<li class="tobuild" data-index="1">动画类型<ul>
+<li>fadeIn</li>
+<li>rollIn</li>
+<li>bounceIn</li>
+<li>moveIn</li>
+<li>zoomIn</li>
+</ul>
+</li>
+</ul>
+
+</article></section></slide>
+<slide class="slide" data-transition="move"><section class="slide-wrapper"><hgroup>
+<h2>表格示例</h2>
+<h3>市面上主要的css预处理器：Less\Sass\Stylus</h3>
+
+</hgroup><article>
+
+<table>
+<thead>
+<tr>
+<th style="text-align:left"></th>
+<th style="text-align:center">Less</th>
+<th style="text-align:right">Sass</th>
+<th>Stylus</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">环境</td>
+<td style="text-align:center">js/nodejs</td>
+<td style="text-align:right">Ruby(这列右对齐)</td>
+<td class="highlight">nodejs(高亮)</td>
+</tr>
+<tr>
+<td style="text-align:left">扩展名</td>
+<td style="text-align:center">.less</td>
+<td style="text-align:right">.scss/.sass</td>
+<td>.styl</td>
+</tr>
+<tr>
+<td style="text-align:left">特点</td>
+<td style="text-align:center">老牌，用户多，支持js解析</td>
+<td style="text-align:right">功能全，有成型框架，发展快</td>
+<td>语法多样，小众</td>
+</tr>
+<tr>
+<td style="text-align:left">案例/框架</td>
+<td style="text-align:center"><a href="http://getbootstrap.com/" target="_blank">Bootstrap</a></td>
+<td style="text-align:right"><a href="http://beta.compass-style.org/" target="_blank">Compass</a> <a href="http://getbootstrap.com/css/#sass" target="_blank">Bootstrap</a> <a href="http://foundation.zurb.com/" target="_blank">Foundation</a> <a href="http://bourbon.io/" target="_blank">Bourbon</a> <a href="https://github.com/jsw0528/base.sass" target="_blank">Base.Sass</a></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+</article></section></slide>
+<slide class="slide" data-transition="move"><section class="slide-wrapper"><hgroup>
+<h2>text</h2>
+
+</hgroup><article>
+
+<p><span class="text-danger">.text-danger</span> <span class="text-success">.text-sucess</span><span class="text-primary">.text-primary</span></p>
+<p><span class="text-warning">.text-warning</span><span class="text-info">.text-info</span><span class="text-white">.text-white</span><span class="text-dark">.text-dark</span></p>
+<p><span class="blue">.blue</span><span class="blue2">.blue2</span><span class="blue3">.blue3</span><span class="gray">.gray</span><span class="gray2">.gray2</span><span class="gray3">.gray3</span></p>
+<p><span class="red">.red</span><span class="red2">.red2</span><span class="red3">.red3</span></p>
+<p><span class="yellow">.yellow</span><span class="yellow2">.yellow2</span><span class="yellow3">.yellow3</span><span class="green">.green</span><span class="green2">.green2</span><span class="green3">.green3</span></p>
+
+</article></section></slide>
+<slide class="slide" data-transition="move"><section class="slide-wrapper"><article>
+<h2>label and link</h2>
+<p><span class="label label-primary">.label.label-primary</span><span class="label label-warning">.label.label-warning</span><span class="label label-danger">.label.label-danger</span><span class="label label-default">.label.label-default</span><span class="label label-success">.label.label-success</span><span class="label label-info">.label.label-info</span></p>
+<p><a href="file:///E:/voyaJS/GitHub/nodeppt/publish/demo.htm#">link style</a> <mark>mark</mark></p>
+
+</article></section></slide>
+<slide class="slide" data-transition="move"><section class="slide-wrapper"><hgroup>
+<h2>blockquote</h2>
+
+</hgroup><article>
+
+<blockquote>
+<p>nodeppt可能是迄今为止最好用的web presentation <small>三水清</small></p>
+</blockquote>
+<p>下面是另外一种样式</p>
+<blockquote class="pull-right">
+<p>这是一个class是：pull-right的blockquote <small>small一下</small></p>
+</blockquote>
+
+</article></section></slide>
+<slide class="slide" data-transition="move"><section class="slide-wrapper"><hgroup>
+<h2>buttons</h2>
+
+</hgroup><article>
+
+<button class="btn btn-default">.btn .btn-default</button>  <button class="btn btn-primary">.btn.btn-lg.btn-primary</button> <button class="btn btn-warning">.btn.btn-waring</button> <button class="btn btn-success">.btn.btn-success</button> <button class="btn btn-danger">.btn.btn-danger</button>
+
+
+
+<button class="btn btn-lg btn-default">.btn.btn-lg.btn-default</button> <button class="btn btn-xs btn-success">.btn.btn-xs.btn-success</button> <button class="btn btn-sm btn-primary">.btn.btn-sm.btn-primary</button> <button class="btn btn-rounded btn-warning">.btn.btn-rounded.btn-waring</button>  <button class="btn btn-danger" disabled="disabled">disabled.btn.btn-danger</button>
+
+
+<button class="btn btn-success"><i class="fa fa-share mr5"></i></button>
+</article></section></slide>
+<slide class="slide" data-transition="move"><section class="slide-wrapper"><hgroup>
+<h2>icons: Font Awesome</h2>
+
+</hgroup><article>
+
+<p><i class="fa fa-apple"></i>
+<i class="fa fa-android"></i>
+<i class="fa fa-github"></i>
+<i class="fa fa-google"></i>
+<i class="fa fa-linux"></i>
+<i class="fa fa-css3"></i>
+<i class="fa fa-html5"></i>
+<i class="fa fa-usd"></i>
+<i class="fa fa-pie-chart"></i>
+<i class="fa fa-file-video-o"></i>
+<i class="fa fa-cog"></i></p>
+
+</article></section></slide>
+<slide class="slide" data-transition="move"><section class="slide-wrapper"><hgroup>
+<h2>代码格式化</h2>
+<h3>使用 <code>highlightjs</code> 进行语法高亮</h3>
+
+</hgroup><article>
+
+<div class="columns-2">
+    <pre><code class="javascript hljs">(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">window, document</span>)</span>{
+    <span class="hljs-keyword">var</span> a = <span class="hljs-number">1</span>;
+    <span class="hljs-keyword">var</span> test = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+        <span class="hljs-keyword">var</span> b = <span class="hljs-number">1</span>;
+        alert(b);
+    };
+    <span class="hljs-comment">//泛数组转换为数组</span>
+    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">toArray</span>(<span class="hljs-params">arrayLike</span>) </span>{
+        <span class="hljs-keyword">return</span> [].slice.call(arrayLike);
+    }
+}(<span class="hljs-built_in">window</span>, <span class="hljs-built_in">document</span>));
+    </code></pre>
+    <pre><code class="javascript hljs">(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">window, document</span>)</span>{
+    <span class="hljs-keyword">var</span> a = <span class="hljs-number">1</span>;
+    <span class="hljs-keyword">var</span> test = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+        <span class="hljs-keyword">var</span> b = <span class="hljs-number">1</span>;
+        alert(b);
+    };
+    <span class="hljs-comment">//泛数组转换为数组</span>
+    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">toArray</span>(<span class="hljs-params">arrayLike</span>) </span>{
+        <span class="hljs-keyword">return</span> [].slice.call(arrayLike);
+    }
+}(<span class="hljs-built_in">window</span>, <span class="hljs-built_in">document</span>));
+    </code></pre>
+</div>
+</article></section></slide>
+<slide class="slide" data-transition="move"><section class="slide-wrapper"><hgroup>
+<h2>支持多种皮肤</h2>
+
+</hgroup><article>
+
+<p><a href="file:///E:/voyaJS/GitHub/nodeppt/publish/" target="_blank">colors</a>-<a href="file:///E:/voyaJS/GitHub/nodeppt/publish/demo.htm?theme=moon" target="_blank">moon</a>-<a href="file:///E:/voyaJS/GitHub/nodeppt/publish/demo.htm?theme=blue" target="_blank">blue</a>-<a href="file:///E:/voyaJS/GitHub/nodeppt/publish/demo.htm?theme=dark" target="_blank">dark</a>-<a href="file:///E:/voyaJS/GitHub/nodeppt/publish/demo.htm?theme=green" target="_blank">green</a>-<a href="file:///E:/voyaJS/GitHub/nodeppt/publish/demo.htm?theme=light" target="_blank">light</a></p>
+
+</article></section></slide>
+<slide class="slide" data-incallback="testScriptTag" data-transition="move"><section class="slide-wrapper"><hgroup>
+<h2>支持 HTML 和 markdown 语法混编</h2>
+
+</hgroup><article>
+
+<div class="file-setting">
+    <p>这是html</p>
+</div><p id="css-demo">这是css样式</p>
+<p>将html代码直接混编到<strong>markdown</strong>文件中即可</p>
+
+<p id="testScriptTag">我是js控制的颜色 black</p>
+<script>
+    function testScriptTag(){
+        document.getElementById('testScriptTag').style.color = 'black';
+    }
+
+</script><style>
+#css-demo{
+    color: red;
+}
+</style>
+</article></section></slide>
+<slide class="slide" data-transition="move"><section class="slide-wrapper"><hgroup>
+<h2>iframe效果</h2>
+
+</hgroup><article>
+
+<iframe data-src="http://www.baidu.com" src="about:blank;"></iframe>
+</article></section></slide>
+<slide class="slide" data-transition="move"><section class="slide-wrapper"><hgroup>
+<h2>动画样式强调</h2>
+
+</hgroup><article>
+
+<p>这段话里面的<strong>加粗</strong>和<em>em</em>字体会动画哦~</p>
+<p>按下【H】键查看效果</p>
+
+</article></section></slide>
+<slide class="slide" data-transition="move"><section class="slide-wrapper"><hgroup>
+<h2>支持zoom.js</h2>
+
+</hgroup><article>
+
+<p>增加了zoom.js的支持，在演示过程中使用<code>alt</code>+鼠标点击，则点击的地方就开始放大，再次<code>alt+click</code>则回复原状</p>
+
+</article></section></slide>
+<slide class="slide" data-transition="move"><section class="slide-wrapper"><hgroup>
+<h2>图片，点击全屏</h2>
+
+</hgroup><article>
+
+<p><img src="./nodeppt markdown 演示 - By Theo Wang_files/girl.jpg" alt="小萝莉" title="小萝莉"></p>
+
+</article></section></slide>
+<slide class="slide hasnote" data-transition="move"><aside class="note">
+<section>
+<h2>这里是note</h2>
+<p>使用n键，才能显示</p>
+
+</section>
+</aside><section class="slide-wrapper"><hgroup>
+<h2>使用note笔记</h2>
+<h3>note笔记是多窗口，或者自己做一些笔记用的</h3>
+
+</hgroup><article>
+
+<p>按下键盘【N】键测试下note，</p>
+<p>markdown语法如下：</p>
+<pre><code class="markdown hljs">[note]
+这里是note，{ 要换成中括号啊！！
+{/note]
+</code></pre>
+
+</article></section></slide>
+<slide class="slide" data-transition="move"><section class="slide-wrapper"><hgroup>
+<h2>使用画笔</h2>
+<h3>使用画笔做标记哦~你也可以随便作画啊！</h3>
+
+</hgroup><article>
+
+<p>按下键盘【P】键：按下鼠标左键，在此处乱花下看看效果。</p>
+<p>按下键盘【B/Y/R/G/M】：更换颜色，按下【1~4】：更换粗细</p>
+<p>按下键盘【C】键：清空画板</p>
+
+</article></section></slide>
+<slide class="slide" data-transition="move"><section class="slide-wrapper"><hgroup>
+<h2>宽度不够？？</h2>
+
+</hgroup><article>
+
+<p>按下键盘【W】键，切换到更宽的页面看效果，第二次按键返回</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left"></th>
+<th style="text-align:center">less</th>
+<th style="text-align:right">sass</th>
+<th>stylus</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">环境</td>
+<td style="text-align:center">js/nodejs</td>
+<td style="text-align:right">Ruby(这列右对齐)</td>
+<td class="highlight">nodejs(高亮)</td>
+</tr>
+<tr>
+<td style="text-align:left">扩展名</td>
+<td style="text-align:center">.less</td>
+<td style="text-align:right">.sass/.scss</td>
+<td>.styl</td>
+</tr>
+<tr>
+<td style="text-align:left">特点</td>
+<td style="text-align:center">老牌，用户多，支持js解析</td>
+<td style="text-align:right">功能全，有成型框架，发展快</td>
+<td>语法多样，小众</td>
+</tr>
+<tr>
+<td style="text-align:left">案例/框架</td>
+<td style="text-align:center"><a href="http://getbootstrap.com/" target="_blank">Bootstrap</a></td>
+<td style="text-align:right"><a href="http://compass-style.org/" target="_blank">compass</a> <a href="http://bourbon.io/" target="_blank">bourbon</a></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+</article></section></slide>
+<slide class="slide" data-transition="move"><section class="slide-wrapper"><hgroup>
+<h2>使用overview模式</h2>
+
+</hgroup><article>
+
+<p>按下键盘【O】键。看下效果。</p>
+<p>在overview模式下，方向键下一页，【enter】键进入选中页</p>
+<p>或者按下键盘【O】键，退出overview模式</p>
+
+</article></section></slide>
+<slide class="slide" data-transition="move"><section class="slide-wrapper"><hgroup>
+<h2>多窗口演示</h2>
+<h2>双屏演示不out！</h2>
+
+</hgroup><article>
+
+<p>本页面网址改成 <a href="file:///E:/voyaJS/GitHub/nodeppt/publish/demo.htm?_multiscreen=1" target="_blank">url?_multiscreen=1</a>，支持多屏演示哦！</p>
+<p>跟powderpoint一样的双屏功能，带有备注信息。</p>
+
+</article></section></slide>
+<slide class="slide" data-transition="move"><section class="slide-wrapper"><hgroup>
+<h2>20种转场动画随心换</h2>
+
+</hgroup><article>
+
+<ul>
+<li><a href="file:///E:/voyaJS/GitHub/nodeppt/publish/demo.htm?transition=slide">slide</a>/<a href="file:///E:/voyaJS/GitHub/nodeppt/publish/demo.htm?transition=slide2">slide2</a>/<a href="file:///E:/voyaJS/GitHub/nodeppt/publish/demo.htm?transition=slide3">slide3</a></li>
+<li><a href="file:///E:/voyaJS/GitHub/nodeppt/publish/demo.htm?transition=newspaper" target="_blank">newspaper</a></li>
+<li><a href="file:///E:/voyaJS/GitHub/nodeppt/publish/demo.htm?transition=glue" target="_blank">glue</a></li>
+<li><a href="file:///E:/voyaJS/GitHub/nodeppt/publish/demo.htm?transition=kontext" target="_blank">kontext</a>/<a href="file:///E:/voyaJS/GitHub/nodeppt/publish/demo.htm?transition=vkontext" target="_blank">vkontext</a></li>
+<li><a href="file:///E:/voyaJS/GitHub/nodeppt/publish/demo.htm?transition=move" target="_blank">move</a>/<a href="file:///E:/voyaJS/GitHub/nodeppt/publish/demo.htm?transition=circle" target="_blank">circle</a></li>
+<li><a href="file:///E:/voyaJS/GitHub/nodeppt/publish/demo.htm?transition=horizontal" target="_blank">horizontal</a>/<a href="file:///E:/voyaJS/GitHub/nodeppt/publish/demo.htm?transition=horizontal3d" target="_blank">horizontal3d</a></li>
+<li><a href="file:///E:/voyaJS/GitHub/nodeppt/publish/demo.htm?transition=vertical3d" target="_blank">vertical3d</a></li>
+<li><a href="file:///E:/voyaJS/GitHub/nodeppt/publish/demo.htm?transition=zoomin" target="_blank">zoomin</a>/<a href="file:///E:/voyaJS/GitHub/nodeppt/publish/demo.htm?transition=zoomout" target="_blank">zoomout</a></li>
+<li><a href="file:///E:/voyaJS/GitHub/nodeppt/publish/demo.htm?transition=cards" target="_blank">cards</a></li>
+<li><a href="file:///E:/voyaJS/GitHub/nodeppt/publish/demo.htm?transition=earthquake" target="_blank">earthquake</a>/<a href="file:///E:/voyaJS/GitHub/nodeppt/publish/demo.htm?transition=pulse" target="_blank">pulse</a>/<a href="file:///E:/voyaJS/GitHub/nodeppt/publish/demo.htm?transition=stick" target="_blank">stick</a>...</li>
+</ul>
+
+</article></section></slide>
+<slide class="slide" data-transition="glue"><section class="slide-wrapper"><hgroup>
+<h2>这是一个glue的动画</h2>
+
+</hgroup><article>
+
+<p>使用方法（全局设置） 1：</p>
+<blockquote>
+<p>transition: glue</p>
+</blockquote>
+
+</article></section></slide>
+<slide class="slide" data-transition="glue"><section class="slide-wrapper"><hgroup>
+<h2>这是一个glue的动画</h2>
+
+</hgroup><article>
+
+<p>使用方法 2：</p>
+<p>[slide data-transition="glue"]</p>
+
+</article></section></slide>
+<slide class="slide" data-transition="zoomin"><section class="slide-wrapper"><hgroup>
+<h2>这是一个zoomin的动画</h2>
+
+</hgroup><article>
+
+<p>使用方法：</p>
+<p>[slide data-transition="zoomin"]</p>
+
+</article></section></slide>
+<slide class="slide" data-transition="vertical3d"><section class="slide-wrapper"><hgroup>
+<h2>这是一个vertical3d的动画</h2>
+
+</hgroup><article>
+
+<p>使用方法：</p>
+<p>[slide data-transition="vertical3d"]</p>
+
+</article></section></slide>
+<slide class="slide" data-outcallback="outcallback" data-incallback="incallback" data-transition="move"><section class="slide-wrapper"><hgroup>
+<h2>使用回调</h2>
+
+</hgroup><article>
+
+<ul>
+<li>[slide data-outcallback="fnName"]<ul>
+<li>进入执行回调incallback函数</li>
+</ul>
+</li>
+<li>[slide data-incallback="fnName"]<ul>
+<li>退出执行outcallback函数</li>
+</ul>
+</li>
+</ul>
+<p>亦可以组合写：</p>
+<blockquote>
+<p>[slide data-outcallback="foo" data-incallback="bar"]</p>
+</blockquote>
+<p id="incallback"></p>
+<p id="outcallback"></p>
+</article></section></slide>
+<slide class="slide" data-transition="move"><section class="slide-wrapper"><hgroup>
+<h2>远程执行函数</h2>
+
+</hgroup><article>
+
+<p>在多屏和远程模式中，可以使用<code>proxyFn</code>来远程执行函数。</p>
+<pre><code class="html hljs xml"><span class="hljs-tag">&lt;<span class="hljs-title">script</span>&gt;</span><span class="actionscript">
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">globalFunc</span><span class="hljs-params">()</span></span>{
+}
+</span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">onclick</span>=<span class="hljs-value">"Slide.proxyFn('globalFunc')"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"btn btn-default"</span>&gt;</span>远程执行函数<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+</code></pre>
+<p><button onclick="Slide.proxyFn(&#39;globalFunc&#39;,&#39;args&#39;)" class="btn btn-default">测试远程执行函数</button>
+<a href="file:///E:/voyaJS/GitHub/nodeppt/publish/demo.htm?_multiscreen=1#33">在多屏中测试远程执行</a></p>
+<script>
+    function globalFunc(a){
+        alert('proxyFn success: '+a+location.href);
+    }
+</script>
+</article></section></slide>
+<slide class="slide" data-transition="move"><section class="slide-wrapper"><hgroup>
+<h2>更多玩法</h2>
+
+</hgroup><article>
+
+<p><a href="https://github.com/ksky521/nodePPT" target="_blank">https://github.com/ksky521/nodePPT</a></p>
+<p>什么？这些功能还不够用？</p>
+<p>socket远程控制可以在手机上摇一摇换页哦~</p>
+<p>查看项目目录ppts获取更多帮助信息</p>
+
+</article></section></slide>
+        
+
+        <!-- <slide class="slide logoslide dark nobackground">
+            <article class="flexbox vcenter">
+                <h2 style="color: white;">Powered By nodePPT v1.3.8</h2>
+            </article>
+        </slide> -->
+        <div class="slideTip" id="tip"></div>
+    </slides>
+</div>
+<canvas id="drawBoard" class="draw-board" width="900" height="700" style="display: none;"></canvas>
+<div class="progress"><span id="progress" style="width: 2.63157894736842%;"></span></div>
+<div id="_buttons">
+    <div class="_btn-box" id="_btn-box" style="display:none;">
+        <button class="fa fa-arrow-circle-left" id="_btn-prev"></button>
+        <button class="fa fa-arrow-circle-right" id="_btn-next"></button>
+        <button class="fa fa-paint-brush" id="_btn-brush"></button>
+        <button class="fa fa-compress" id="_btn-overview" data-toggle="fa fa-expand"></button>
+    </div>
+    <button class="fa fa-bars" id="_btn-bar" data-toggle="fa fa-close"></button>
+</div>
+<script src="./nodeppt markdown 演示 - By Theo Wang_files/mix.0.3.0.min.js"></script>
+<script>
+var base = location.protocol + '//' + location.host;
+
+var path = (location.pathname + '#').split('/').filter(function(v){
+    return !!v;
+});
+path.pop();
+path = path.join('/');
+MixJS.config({
+    baseURL: [ base, path, 'js'].join('/')+'/'
+});
+
+</script>
+<script src="./nodeppt markdown 演示 - By Theo Wang_files/broadcast.js"></script>
+<script src="./nodeppt markdown 演示 - By Theo Wang_files/nodeppt.js"></script>
+<script>
+Slide.init({
+    containerID: 'container',
+    drawBoardID: 'drawBoard',
+    slideClass: '.slide',
+    buildClass: '.build',
+    progressID: 'progress',
+    transition: 'move',
+    width: 1100,
+    dir: './',
+    
+    //打开下面的注释就开启postMessage方式
+    //访问网址127.0.0.1:8080/ppt/demo#client
+    control:{
+        type: 'postMessage',
+        args:{
+            isControl:  false
+        }
+    },
+    
+    tipID: 'tip'
+});
+MixJS.loadJS('highlight/highlight.pack.js',function(){
+    hljs.tabReplace = '  ';
+    hljs.initHighlightingOnLoad();
+});
+</script>
+<script src="./nodeppt markdown 演示 - By Theo Wang_files/demo.js"></script>
+<link rel="stylesheet" href="file:///E:/voyaJS/GitHub/nodeppt/publish/css/demo.css">
+<script src="./nodeppt markdown 演示 - By Theo Wang_files/zoom.js"></script>
+
+<!-- MathJax -->
+<script type="text/x-mathjax-config;executed=true">
+  MathJax.Hub.Config({
+  config: ["TeX-AMS-MML_HTMLorMML.js"],
+  tex2jax: {inlineMath: [['\\(','\\)']]}});
+  //['$','$'], 避免货币价格冲突
+</script>
+<script type="text/javascript" src="./nodeppt markdown 演示 - By Theo Wang_files/MathJax.js"></script>
+
+<!--placeholder-->
+
+
+<div class="img-full transparent"></div><canvas height="965" width="1680" style="position: absolute; top: 0px; display: none;"></canvas><div style="position: absolute; width: 0px; height: 0px; overflow: hidden; padding: 0px; border: 0px; margin: 0px;"><div id="MathJax_Font_Test" style="position: absolute; visibility: hidden; top: 0px; left: 0px; width: auto; padding: 0px; border: 0px; margin: 0px; white-space: nowrap; text-align: left; text-indent: 0px; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; font-size: 40px; font-weight: normal; font-style: normal; font-family: MathJax_Size3, sans-serif;"></div></div></body></html>
